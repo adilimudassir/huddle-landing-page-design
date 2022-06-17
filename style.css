@@ -60,6 +60,7 @@ header {
   height: 100%;
   flex-direction: column;
   gap: 2rem;
+  padding-bottom: 3rem;
 }
 
 .menu {
