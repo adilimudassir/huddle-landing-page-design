@@ -111,6 +111,7 @@ header {
   justify-content: center;
   padding: 2rem 0;
   gap: 2rem;
+  animation: slideInFromLeft 1s ease-in;
 }
 
 .showcase-text h1 {
@@ -135,6 +136,7 @@ header {
 
 .showcase-image {
   height: 100%;
+  animation: slideInFromRight 1s ease-out;
 }
 
 main {
@@ -157,6 +159,7 @@ main {
   margin: 10px;
   justify-content: flex-end;
   display: flex;
+  animation: slideInFromBottom 1s ease-in;
 }
 
 .grow-together {
@@ -319,4 +322,45 @@ i {
   justify-content: flex-end;
   color: var(--pale-cyan);
   font-size: 0.85rem;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
